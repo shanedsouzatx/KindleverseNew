@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./Header/header";
+import MyLayout from "./MyLayout/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,11 +26,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+          integrity="sha512-Fo3rlrZj/k7ujTTXw4XD0/tyv9G/X9qS1iVQZV1tb9v4ZKhvjZt60o1Rz8q0fn9BPmEGLDQ8QqjUvJ6Zzqg41g=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
-          <Header />
-        {children}
+      >
+        <Header />
+        <MyLayout>
+          {children}
+        </MyLayout>
       </body>
     </html>
   );

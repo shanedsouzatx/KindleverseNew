@@ -1,9 +1,11 @@
+import Image from 'next/image';
 import React from 'react';
 import { FaUser, FaPhone, FaEnvelope } from 'react-icons/fa';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="bg-[#ECF0F1] text-white min-h-screen flex items-center relative overflow-hidden py-20">
+    <section className="mt-12 bg-[#ECF0F1] text-white pb-10 lg:py-20 flex items-center relative overflow-hidden">
+
       <div className="max-w-screen-xl mx-auto px-4 lg:px-16 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -22,11 +24,18 @@ const HeroSection: React.FC = () => {
                 Call Now <i className="fa fa-phone ml-2"></i>
               </a>
             </div>
-            <a href="#" className="flex items-center space-x-3 text-blue-600 hover:underline">
-              <i className="fa fa-comments-o text-xl"></i>
+            <a href="#" className="flex items-center space-x-3">
+              {/* heroIcon */}
+              <Image 
+                          src="/heroIcon.png"
+                          alt="HeroIcon"
+                          width={42}
+                          height={32}
+                          className="w-[40] h-[36] text-[#E67E22]"
+                        />
               <div>
-                <span>24/7 Available</span>
-                <p className="text-sm">Live Chat</p>
+                <span className='text-gray-600 text-[12px] hover:text-[#E67E22]'>24/7 Available</span>
+                <p className="font-bold text-gray-600 hover:text-[#E67E22]">Live Chat</p>
               </div>
             </a>
           </div>
@@ -37,9 +46,9 @@ const HeroSection: React.FC = () => {
             <div className="absolute top-0 left-0 w-full">
               <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" width="100%">
                 <defs>
-                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
                     <stop offset="0%" stopColor="#29A0D2" />
-                    <stop offset="100%" stopColor="#4D30BE" />
+                    <stop offset="100%" stopColor="#126196" />
                   </linearGradient>
                 </defs>
                 <path fill="url(#gradient)">
@@ -55,7 +64,7 @@ const HeroSection: React.FC = () => {
             </div>
 
             {/* Discount Badge */}
-            <div className="absolute top-[-80] right-3 bg-white rounded-full border-4 border-blue-700 w-28 h-28 flex flex-col justify-center items-center text-center shadow-xl z-20">
+            <div className="absolute -top-12 xl:-right-5 lg:-right-8 right-3 bg-white rounded-full border-4 border-[#3498DB] w-32 h-32 flex flex-col justify-center items-center text-center shadow-xl z-20">
               <p className="text-sm font-bold text-black">UP TO</p>
               <p className="text-2xl font-extrabold text-black leading-none">50%</p>
               <p className="text-sm font-bold text-black">OFF</p>
@@ -84,7 +93,7 @@ const HeroSection: React.FC = () => {
                     />
                   </div>
 
-                  <div className="relative mb-8">
+                  <div className="relative">
                     <FaPhone className="absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-400" />
                     <input
                       type="tel"

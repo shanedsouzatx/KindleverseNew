@@ -7,7 +7,6 @@ import Image from 'next/image';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
@@ -15,7 +14,13 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <Image src="/logo1.png" alt="Kindleverse Logo" width={200} height={90} />
+          <Image
+            src="/logo1.png"
+            alt="Kindleverse Logo"
+            width={200}
+            height={90}
+            className="w-[140px] sm:w-[160px] md:w-[200px] h-auto"
+          />
         </Link>
 
         {/* Mobile Menu Toggle */}
@@ -26,9 +31,11 @@ const Header = () => {
         </div>
 
         {/* Navigation */}
-        <nav className={`${
-          isOpen ? 'block' : 'hidden'
-        } lg:flex lg:items-center lg:space-x-6 absolute lg:relative top-full left-0 w-full lg:w-auto bg-[#2C3E50] lg:bg-transparent p-4 lg:p-0`}>
+        <nav
+          className={`${
+            isOpen ? 'block' : 'hidden'
+          } lg:flex lg:items-center lg:space-x-6 absolute lg:relative top-full left-0 w-full lg:w-auto bg-[#2C3E50] lg:bg-transparent p-4 lg:p-0`}
+        >
           <ul className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-6 font-medium text-sm lg:text-base">
             <li><Link href="/" className="hover:text-[#E67E22]">Home</Link></li>
             <li><Link href="/about" className="hover:text-[#E67E22]">About</Link></li>
@@ -43,14 +50,14 @@ const Header = () => {
 
           {/* Action Buttons */}
           <div className="mt-4 lg:mt-0 lg:ml-6 flex flex-col lg:flex-row gap-2">
-            <button className="bg-[#E67E22] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-gradient-to-r hover:from-[#E67E22] hover:to-[#F39C12] transition">
+            <button className="bg-[#E67E22] text-white px-4 py-1.5 lg:px-5 lg:py-2 rounded-full text-xs sm:text-sm font-semibold hover:bg-gradient-to-r hover:from-[#E67E22] hover:to-[#F39C12] transition">
               LIVE CHAT
             </button>
             <a
               href="tel:6674235532"
-              className="bg-[#E67E22] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-gradient-to-r hover:from-[#E67E22] hover:to-[#F39C12] transition text-center"
+              className="bg-[#E67E22] text-white px-4 py-1.5 lg:px-5 lg:py-2 rounded-full text-xs sm:text-sm font-semibold hover:bg-gradient-to-r hover:from-[#E67E22] hover:to-[#F39C12] transition text-center"
             >
-              (667) 423–5532
+              (667) 423-5532
             </a>
           </div>
         </nav>
@@ -81,7 +88,10 @@ const Dropdown = ({
       <ul className="hidden group-hover:grid absolute top-full left-0 bg-white text-black p-5 w-[700px] grid-cols-2 sm:grid-cols-3 gap-4 shadow-lg rounded-md z-50">
         {links.map(({ href, label }) => (
           <li key={href}>
-            <Link href={href} className="block hover:text-[#3498DB] border-b border-gray-300 hover:border-[#3498DB] transition pb-1">
+            <Link
+              href={href}
+              className="block hover:text-[#3498DB] border-b border-gray-300 hover:border-[#3498DB] transition pb-1"
+            >
               {label}
             </Link>
           </li>
@@ -90,7 +100,7 @@ const Dropdown = ({
 
       {/* Mobile Dropdown */}
       {showMobile && (
-        <ul className="lg:hidden mt-2 space-y-1 pl-4 text-sm">
+        <ul className="lg:hidden mt-2 space-y-1 pl-4 text-xs sm:text-sm">
           {links.map(({ href, label }) => (
             <li key={href}>
               <Link href={href} className="block text-white hover:text-[#E67E22]">
@@ -104,7 +114,6 @@ const Dropdown = ({
   );
 };
 
-// Link groups (no change)
 const ghostWritingLinks = [
   { href: "/story-writing", label: "Story Writing" },
   { href: "/song-writing", label: "Song Writing" },

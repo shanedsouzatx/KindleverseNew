@@ -48,7 +48,7 @@ const PartnerSection = () => {
                 src={logo}
                 alt={`partner-${index}`}
                 className="mx-auto h-24 w-auto object-contain"
-                style={{ width: 'auto', height: '6rem' }}
+                style={{ width: 'auto', height: '4rem' }}
               />
             </SwiperSlide>
           ))}
