@@ -38,7 +38,7 @@ const Header = () => {
         >
           <ul className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-6 font-medium text-sm lg:text-base">
             <li><Link href="/" className="hover:text-[#E67E22]">Home</Link></li>
-            <li><Link href="/about" className="hover:text-[#E67E22]">About</Link></li>
+            <li><Link href="/AboutUsPage" className="hover:text-[#E67E22]">About</Link></li>
 
             {/* Dropdowns */}
             <Dropdown title="Ghost Writing" links={ghostWritingLinks} />
