@@ -59,8 +59,8 @@ export default function CreativeProcess() {
             <Image
               src="/process-center-book.png"
               alt="process center"
-              width={320}
-              height={320}
+              width={500}
+              height={500}
               className="object-contain"
               loading="lazy"
             />
