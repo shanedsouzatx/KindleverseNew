@@ -8,6 +8,7 @@ import PartnerSection1 from '../story-writing/LogoSwiper/page'
 
 import CreativeProcess from './Procees-steps/page'
 import FaqSection from './Procees-steps/FAQs/page'
+import FaqSection1 from './Procees-steps/FAQs/page'
 
 const StoryWriting = () => {
     const revisions = [
@@ -197,7 +198,7 @@ const StoryWriting = () => {
     </section>
     <PartnerSection1 />
     <CreativeProcess />
-    <FaqSection />
+    <FaqSection1 />
     <TestimonialsPage />
 
     </>

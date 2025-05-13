@@ -4,9 +4,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import BookFilter from '../story-writing/storybooks/page'
 import PartnerSection1 from '../story-writing/LogoSwiper/page'
-import FaqSection1 from './Procees-steps/FAQs/page'
+import FaqSection1 from '../biography-writing/Procees-steps/FAQs/page'
 import TestimonialsPage from '../Testonomial/page'
-import CreativeProcess from './Procees-steps/page'
+import CreativeProcess from '../story-writing/Procees-steps/page'
 
 
 
@@ -14,17 +14,17 @@ const StoryWriting = () => {
     const revisions = [
         {
           img: "/rev0.png",
-          title: "Unlimited Revisions",
-          desc: "Our professional bio writers perfect your book, adapting it until it resonates perfectly with your vision.",
+          title: "Revisions At Your Request",
+          desc: "Without limits, you can edit your ghost written autobiography until it meets your vision and is flawless.",
         },
         {
           img: "/rev1.png",
-          title: "Customer Satisfaction",
-          desc: "When you hire a writer for biography, quality and timely delivery assure your contentment.",
+          title: "Our Goal, Your Approval",
+          desc: "Employ an autobiography writer and rest assured that your project will be completed on time and to your satisfaction.",
         },
         {
           img: "/rev2.png",
-          title: "Self-Maintained OwnerShip",
+          title: "Full Access To Ownership",
           desc: "At KindleVerse, you retain the copyrights to your content when you hire someone to write bio.",
         },
         {
@@ -37,18 +37,17 @@ const StoryWriting = () => {
     <>
     <section
       className="pt-[200px] pb-16 bg-no-repeat bg-cover bg-center relative z-10"
-      style={{ backgroundImage: "url('/biography.png')" }}
+      style={{ backgroundImage: "url('/auto-bg.png')" }}
     >
       <div className="max-w-screen-xl mx-auto px-4 lg:px-16 w-full">
         <div className="flex flex-col-reverse xl:flex-row items-center gap-10">
           {/* Text Section */}
           <div className="xl:w-7/12 text-center xl:text-left">
             <h1 className="text-4xl xl:text-5xl font-bold mb-6 text-white leading-snug">
-            Best Biography Writing Services For Preserving & Honoring Legacies
+            Ghost Autobiography Writing Services: Craft Your Unique Legacy
             </h1>
             <p className="text-gray-200 text-lg mb-8">
-            Biographies shed light on extraordinary lives that have influenced our world, acting as windows into the past. At KindleVerse, we specialize in writing compelling biographies that convey the spirit of people together with their experiences and achievements.
-            </p>
+            Our autobiography writing services are here to assist you in sharing your amazing journey through life with the world. We turn your recollections into an engaging autobiography that connects with readers by using our expert storytelling skills and acute awareness of your experiences. Let people know the real you with your ghost written autobiography courtesy of KindleVerse.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center xl:justify-start">
               <a
                 href="javascript:;"
@@ -67,7 +66,7 @@ const StoryWriting = () => {
           {/* Image Section */}
       <div className="xl:w-5/12 flex justify-center items-center">
             <img
-              src="/biography-bnr-img.webp"
+              src="/autobiography-writing-bnr-img.png"
               alt="Memoir Illustration"
               className="max-w-[400px] w-full h-auto object-contain"
             />
@@ -83,7 +82,7 @@ const StoryWriting = () => {
           <div className="lg:w-1/2 relative">
             <div className="absolute top-0 left-0 w-full h-full resource-box-img z-[-1]" />
             <Image
-              src="/biography-writing-img1.webp"
+              src="/autobiography-writing-img1.png"
               alt="resource-box-img"
               width={500}
               height={500}
@@ -95,10 +94,11 @@ const StoryWriting = () => {
           <div className="lg:w-1/2">
             <div className="text-gray-800 space-y-6">
               <h2 className="text-3xl lg:text-4xl font-bold">
-              Our Professional Biography Writers Capture Your Legacy In Words
+              Why Should You Choose Our Exceptional Autobiography Writing Services?
               </h2>
-              <p>A story ready to be told can be found in every life. Our highly gifted biography writers for hire possess a special gift for capturing the spirit of people and transforming their struggles, victories, and experiences into engrossing stories that captivate readers.</p>
-              <p>Research and storytelling techniques are combined to create a biography. In order to capture the subtleties that set the subject apart from others, our writers thoroughly investigate their life’s journey. They then weave these details into a narrative tapestry that transcends time with our professional bio writing services.</p>
+              <p>Your life's journey can uplift, educate, and inspire others. Try our autobiography writing services and allow us to help you write a narrative that will impact people worldwide. They collaborate closely with you to make sure your personality and voice are represented in your autobiography while preserving the narrative's general cohesion and structure.</p>
+              <p>We feel that every person's life story is distinct and should be given special consideration while writing about it. We provide personalized autobiography writing services according to your requirements and tastes. Our autobiography ghostwriter may customize our services to match your goals, whether you want to cover your complete life path or just a certain area, like your profession or relationships.</p>
+            <p>Working together, you and our autobiography ghostwriters can ensure that your objectives and book vision are well understood. The storyline that they create emphasizes your uniqueness and draws readers in, all thanks to their expertise and inventiveness. You have complete control over the format and subject matter of your autobiography, but our ebook writing team will support you at every turn.Hiring an autobiography writer will immediately add an intriguing touch to your story!</p>
             </div>
           </div>
         </div>
@@ -134,7 +134,7 @@ const StoryWriting = () => {
       <div className="lg:w-1/2 relative">
         <div className="absolute top-0 left-0 w-full h-full resource-box-img z-[-1]" />
         <Image
-          src="/biography-writing-img2.webp"
+          src="/memoir-img2.png"
           alt="resource-box-img"
           width={500}
           height={500}

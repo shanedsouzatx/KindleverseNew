@@ -1,38 +1,39 @@
 
 'use client'
+import { s } from 'framer-motion/client'
 import Image from 'next/image'
 
 export default function CreativeProcess() {
   const steps = [
     {
       id: '01',
-      title: 'Ideation',
-      desc: 'Brainstorm topics, selecting intriguing real-life subjects that resonate with your readers and ignite curiosity.'
+      title: 'Ideation and Planning',
+      desc: 'With the assistance of our ebook writers for hire, you can easily pinpoint the main topics, target audience, and objectives of your eBook. List down ideas that are in line with your goals.'
     },
     {
       id: '02',
-      title: 'Research',
-      desc: 'Dive deep into reliable sources, and gather data, facts, and anecdotes to provide a robust foundation.'
+      title: 'Research and Content Gathering',
+      desc: 'Our team conducts thorough research to gather accurate and up-to-date information relevant to your eBook’s subject matter.'
     },
     {
       id: '03',
-      title: 'Outline',
-      desc: 'Construct a structured roadmap, arranging collected material to ensure logical flow and narrative cohesion.'
+      title: 'Outline Creation and Structuring',
+      desc: 'Craft a comprehensive outline that organizes your content logically, which will go on to serve as the blueprint for your eBook’s structure and flow.'
     },
     {
       id: '04',
-      title: 'Writing',
-      desc: 'Create a seamless tapestry of truth in each chapter by skillfully weaving together scientific discoveries with deft storytelling.'
+      title: 'Writing and Drafting',
+      desc: 'Hire a ghostwriter to write your book and watch your eBook outline transform into well-crafted chapters, focusing on clarity, engagement, and alignment with your voice.'
     },
     {
       id: '05',
-      title: 'Revision',
-      desc: 'Polish your manuscript meticulously, refining language, clarifying points, and enhancing readability.'
+      title: 'Proofreading and Final Review',
+      desc: 'To guarantee the highest quality standards are met, our staff completes a thorough proofreading and final review to remove any errors. For an extra layer of precision, you can also consider our book proofreaders for hire to ensure your manuscript is flawless and publication-ready.'
     },
     {
       id: '06',
-      title: 'Fact-Check',
-      desc: 'Validate every claim, statistic, and detail to maintain the integrity and credibility of your non-fiction work.'
+      title: 'Delivery and Publishing',
+      desc: 'With our custom eBook creation services, we provide the finalized e-book in the desired format, ready for distribution or publishing on digital platforms.'
     }
   ]
 
@@ -40,7 +41,7 @@ export default function CreativeProcess() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h3 className="text-3xl md:text-4xl font-bold">Our Non-Fiction Ghostwriting Process</h3>
+          <h3 className="text-3xl md:text-4xl font-bold">Our 6-Step eBook Writing Process</h3>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">

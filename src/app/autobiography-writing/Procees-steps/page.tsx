@@ -1,38 +1,39 @@
 
 'use client'
+import { s } from 'framer-motion/client'
 import Image from 'next/image'
 
 export default function CreativeProcess() {
   const steps = [
     {
       id: '01',
-      title: 'Ideation',
-      desc: 'Brainstorm topics, selecting intriguing real-life subjects that resonate with your readers and ignite curiosity.'
+      title: 'Initial Consultation',
+      desc: 'As part of our custom biography writing services, we start by learning about the subject’s life, accomplishments, and the goal of the biography.'
     },
     {
       id: '02',
-      title: 'Research',
-      desc: 'Dive deep into reliable sources, and gather data, facts, and anecdotes to provide a robust foundation.'
+      title: 'Thorough Research',
+      desc: 'Collecting information, anecdotes, and historical background with great care in order to create a solid foundation for the biography.'
     },
     {
       id: '03',
-      title: 'Outline',
-      desc: 'Construct a structured roadmap, arranging collected material to ensure logical flow and narrative cohesion.'
+      title: 'Structural Blueprint',
+      desc: 'Our biography authors for hire develop a narrative framework outlining the chronological and thematic aspects of the subject’s life story. Our narrative writing services ensure a compelling and well-structured biography.'
     },
     {
       id: '04',
-      title: 'Writing',
-      desc: 'Create a seamless tapestry of truth in each chapter by skillfully weaving together scientific discoveries with deft storytelling.'
+      title: 'Narrative Creation',
+      desc: 'Our professional biography writers begin the task of meticulously writing the biography, incorporating important events, feelings, and facts to create a story that is captivating to read.'
     },
     {
       id: '05',
-      title: 'Revision',
-      desc: 'Polish your manuscript meticulously, refining language, clarifying points, and enhancing readability.'
+      title: 'Refinement and Editing',
+      desc: 'Careful editing for clarity, coherence and emotional resonance, ensuring a polished and engaging reading experience.'
     },
     {
       id: '06',
-      title: 'Fact-Check',
-      desc: 'Validate every claim, statistic, and detail to maintain the integrity and credibility of your non-fiction work.'
+      title: 'Final Presentation',
+      desc: 'Delivering the completed biography, ready to honor and celebrate the subject’s legacy, inspires readers for future generations.'
     }
   ]
 
@@ -40,7 +41,7 @@ export default function CreativeProcess() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h3 className="text-3xl md:text-4xl font-bold">Our Non-Fiction Ghostwriting Process</h3>
+          <h3 className="text-3xl md:text-4xl font-bold">Our 6-Step Professional Bio Writing Services Process</h3>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">

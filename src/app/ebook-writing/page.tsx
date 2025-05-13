@@ -4,32 +4,34 @@ import Link from 'next/link'
 import Image from 'next/image'
 import BookFilter from '../story-writing/storybooks/page'
 import PartnerSection1 from '../story-writing/LogoSwiper/page'
-import FaqSection from '../song-writing/FAQs/page'
+
 import TestimonialsPage from '../Testonomial/page'
-import CreativeProcess from '../story-writing/Procees-steps/page'
+import CreativeProcess from './Procees-steps/page'
+import FaqSection1 from './Procees-steps/FAQs/page'
+
 
 
 const StoryWriting = () => {
     const revisions = [
         {
           img: "/rev0.png",
-          title: "No Limits On Edits",
-          desc: "Unrestrained amendments allow you to perfect and adapt your words to fit your visualization.",
+          title: "Unlimited Revisions",
+          desc: "Unlimited revisions, crafting your words until perfection, tailored to your vision.",
         },
         {
           img: "/rev1.png",
-          title: "Client Contentment",
-          desc: "Rapid delivery and excellent writing promise your satisfaction with memoir ghostwriter.",
+          title: "Customer Satisfaction",
+          desc: "When you hire a writer for ebooks, quality and timely delivery assure your contentment.",
         },
         {
           img: "/rev2.png",
-          title: "Autonomous Ownership",
-          desc: "The copyright to the content is retained by the author; your work is absolutely yours.",
+          title: "Self-Maintained Ownership",
+          desc: "At KindleVerse, you retain the copyrights to your eBook content.",
         },
         {
           img: "/rev3.png",
-          title: "Comprehensive Investigation",
-          desc: "Widespread enquiry and particular content creation, by our memoir writer for hire!",
+          title: "Thorough Research",
+          desc: "Extensive research and well-crafted e-book content specially curated for you.",
         },
       ];
   return (
@@ -188,9 +190,8 @@ const StoryWriting = () => {
     </section>
     <PartnerSection1 />
     <CreativeProcess />
-    <FaqSection />
+    <FaqSection1 />
     <TestimonialsPage />
-
     </>
   )
 }
